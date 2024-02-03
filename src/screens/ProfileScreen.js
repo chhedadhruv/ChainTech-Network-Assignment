@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { auth, db } from "../firebase";
+import { signOut } from "firebase/auth";
 import { getDoc, updateDoc, collection, doc } from "firebase/firestore";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
@@ -129,6 +130,15 @@ const ProfileScreen = () => {
                 </Form>
               )}
             </Card.Body>
+          <Col className="text-center mb-2">
+            <Button
+              variant="danger"
+              type="button"
+              onClick={() => signOut(auth)}
+            >
+              Sign Out
+            </Button>
+            </Col>
           </Card>
         </Col>
       </Row>
