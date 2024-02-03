@@ -32,27 +32,27 @@ In the project directory, you can run the following scripts:
 ## Folder Structure
 The project structure follows the standard Create React App layout.
 
-ChainTech-Network-Assignment/__
-│__
-├── public/__
-│   └── ...  # Public assets and HTML template__
-│__
-├── src/__
-│   ├── components/__
-│   │   └── ...  # React components__
-│   │__
-│   ├── pages/__
-│   │   └── ...  # React pages or screens__
-│   │__
-│   ├── firebase/__
-│   │   └── ...  # Firebase configuration__
-│   │__
-│   ├── App.js  # Main application component__
-│   └── index.js  # Entry point for React app__
-│__
-├── package.json  # Project configuration and dependencies__
-├── README.md  # Project documentation__
-└── ...  # Other files and directories__
+ChainTech-Network-Assignment/<br>
+│<br>
+├── public/<br>
+│   └── ...  # Public assets and HTML template<br>
+│<br>
+├── src/<br>
+│   ├── components/<br>
+│   │   └── ...  # React components<br>
+│   │<br>
+│   ├── pages/<br>
+│   │   └── ...  # React pages or screens<br>
+│   │<br>
+│   ├── firebase/<br>
+│   │   └── ...  # Firebase configuration<br>
+│   │<br>
+│   ├── App.js  # Main application component<br>
+│   └── index.js  # Entry point for React app<br>
+│<br>
+├── package.json  # Project configuration and dependencies<br>
+├── README.md  # Project documentation<br>
+└── ...  # Other files and directories<br>
 
 ## Packages Used
 The project uses the following npm packages:
