@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/ChainTech-Network-Assignment/static/js/main.3e1450a8.js",
+    "static/js/592.e6c1104a.chunk.js": "/ChainTech-Network-Assignment/static/js/592.e6c1104a.chunk.js",
+    "index.html": "/ChainTech-Network-Assignment/index.html",
+    "main.3e1450a8.js.map": "/ChainTech-Network-Assignment/static/js/main.3e1450a8.js.map",
+    "592.e6c1104a.chunk.js.map": "/ChainTech-Network-Assignment/static/js/592.e6c1104a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.3e1450a8.js"
+  ]
+}
