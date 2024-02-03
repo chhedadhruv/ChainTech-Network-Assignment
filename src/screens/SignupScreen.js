@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { auth, createUser, db } from "../firebase";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
@@ -7,6 +7,7 @@ import { FaGoogle } from "react-icons/fa";
 import { setDoc, doc } from "firebase/firestore";
 
 const SignupScreen = () => {
+  const [user, setUser] = useState(null);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
@@ -16,6 +17,19 @@ const SignupScreen = () => {
   const [error, setError] = useState(null);
   const provider = new GoogleAuthProvider();
   const navigate = useNavigate();
+
+  // navigate to profile if user is logged in
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUser(user);
+        navigate("/");
+      } else {
+        setUser(null);
+      }
+    });
+    return () => unsubscribe();
+  }, [navigate]);
 
   const handleSignup = async () => {
     if (name && phone && address && email && password && confirmPassword) {
