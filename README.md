@@ -29,31 +29,6 @@ In the project directory, you can run the following scripts:
 * npm test: Launches the test runner.
 * npm run deploy: Deploys the app to GitHub Pages.
 
-## Folder Structure
-The project structure follows the standard Create React App layout.
-
-ChainTech-Network-Assignment/<br>
-│<br>
-├── public/<br>
-│   └── ...  # Public assets and HTML template<br>
-│<br>
-├── src/<br>
-│   ├── components/<br>
-│   │   └── ...  # React components<br>
-│   │<br>
-│   ├── pages/<br>
-│   │   └── ...  # React pages or screens<br>
-│   │<br>
-│   ├── firebase/<br>
-│   │   └── ...  # Firebase configuration<br>
-│   │<br>
-│   ├── App.js  # Main application component<br>
-│   └── index.js  # Entry point for React app<br>
-│<br>
-├── package.json  # Project configuration and dependencies<br>
-├── README.md  # Project documentation<br>
-└── ...  # Other files and directories<br>
-
 ## Packages Used
 The project uses the following npm packages:
 
